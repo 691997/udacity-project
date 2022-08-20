@@ -21,14 +21,10 @@ export class ProductCardComponent implements OnInit {
               ) {}
 
   ngOnInit() {
-    this._productsData.getProductsData().subscribe(
-      data => {
-        this.products = data;
-        },
-      error => {
-        alert('Servar Error');
-      }
-    );
+    this._productsData.getProductsData().subscribe({
+      next: data => this.products = data,
+      error: error => alert('Servar Error')
+    });
 
   }
 
