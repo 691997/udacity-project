@@ -1,0 +1,16 @@
+
+
+.success {
+  display: grid;
+  height: 70vh;
+  place-items: center;
+  text-align: center;
+
+  h2 {
+    color: red;
+  }
+
+  .btn {
+    margin: 2rem;
+  }
+}

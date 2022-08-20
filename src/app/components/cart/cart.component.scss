@@ -1,0 +1,46 @@
+
+
+.details-section {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  max-width: 600px;
+}
+
+img {
+  max-width: 200px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px #00000026;
+}
+
+.product-details {
+  padding: 2rem 0;
+  text-align: center;
+
+  .details {
+    margin: 1rem 0;
+  }
+
+  .price {
+    font-size: 23px;
+  }
+
+  .btn {
+    width: 200px;
+  }
+}
+
+
+.form-select {
+  text-align: center;
+  height: 44px;
+  width: 100px;
+  cursor: pointer;
+  margin-right: 26px;
+}
+
+.quantity {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}

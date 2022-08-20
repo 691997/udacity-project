@@ -1,0 +1,20 @@
+
+
+<section class="container details-section">
+
+  <div class="img">
+    <img [src]="product?.img" [alt]="product?.img">
+  </div>
+
+  <div class="product-details">
+    <h2 class="title"> {{ product?.name }} </h2>
+    <p class="details"> {{ product?.details }} </p>
+    <p class="price"> {{ product?.price }} $ </p>
+    <div class="text-center">
+      <app-add-product-button [product]="product"></app-add-product-button>
+    </div>
+    <app-back-button></app-back-button>
+  </div>
+
+</section>
+
