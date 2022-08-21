@@ -4,6 +4,7 @@
       "name": "Sound Headset 1",
       "details": "Onikuma K19 RGB Gaming 3D Surround RGB LED Light for PS4",
       "img": "https://m.media-amazon.com/images/I/41a4wc2H8YS._AC_.jpg",
+      "quantity": 1,
       "price": 20
     },
     {
@@ -11,6 +12,7 @@
       "name": "Sound Headset 2",
       "details": "ONIKUMa K10 PRO Gaming Headset with Surround Sound Pro ",
       "img": "https://m.media-amazon.com/images/I/51T+xZVTOaL._AC_SX522_.jpg",
+      "quantity": 1,
       "price": 30
     },
     {
@@ -18,6 +20,7 @@
       "name": "Sound Headset 3",
       "details": "Onikuma K5 Pro surrounded with Led blue",
       "img": "https://m.media-amazon.com/images/I/41a4wc2H8YS._AC_.jpg",
+      "quantity": 1,
       "price": 70
     },
     {
@@ -25,6 +28,7 @@
       "name": "Sound Headset 4",
       "details": "Onikuma K20 Stereo RGB Gaming Headset ",
       "img": "https://m.media-amazon.com/images/I/71V2OAFXmnL._AC_SX522_.jpg",
+      "quantity": 1,
       "price": 50
     },
     {
@@ -32,6 +36,7 @@
       "name": "Sound Headset 5",
       "details": "onikuma K2 PRO BLUE | 7.1 Surround Sound ",
       "img": "https://m.media-amazon.com/images/I/71dOWdbQm2L._AC_SX522_.jpg",
+      "quantity": 1,
       "price": 40
     },
     {
@@ -39,6 +44,7 @@
       "name": "Sound Headset 6",
       "details": "nikuma K1-B (BONIKUMA) 3.5mm jack stereo",
       "img": "https://m.media-amazon.com/images/I/41gMKc5cyhL._AC_.jpg",
+      "quantity": 1,
       "price": 90
     },
     {
@@ -46,6 +52,7 @@
       "name": "Sound Headset 7",
       "details": "Onikuma K1B BLUE Gaming Headset - 7.1 Surround Sound ",
       "img": "https://m.media-amazon.com/images/I/71ysiA6vreS._AC_SX522_.jpg",
+      "quantity": 1,
       "price": 65
     }
   ]

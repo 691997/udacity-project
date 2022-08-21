@@ -31,12 +31,13 @@ img {
 }
 
 
-.form-select {
+.form-input {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 4px;
   text-align: center;
-  height: 44px;
-  width: 100px;
-  cursor: pointer;
-  margin-right: 26px;
+  margin: 0 28px;
 }
 
 .quantity {

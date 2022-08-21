@@ -11,9 +11,8 @@ export class CartComponent implements OnInit {
 // ----------------------------------- Properties ------------------------------
 
   userProducts?: IProducts[];
-  quantityArray: number[] = [];
-  productPrice?: number;
-  totalPrice: number[] = [];
+  quantity: number = 0;
+  total: number = 0;
 
 // -----------------------------------------------------------------------------
 
@@ -21,28 +20,27 @@ export class CartComponent implements OnInit {
 
   ngOnInit() {
     this.userProducts = this.productsCartService.getCartProducts();
-    this.setquantity();
   }
 
 // ----------------------------------- Functions -------------------------------
 
+  submittedSuccess( message: any) {
+    alert( message );
+  }
+
   removeProduct( product: any ) {
     this.productsCartService.removeProduct( product.id )
     this.userProducts = this.productsCartService.getCartProducts();
+    alert(' Product is removed Success ');
   }
 
-  getQuantity( value: any ) {
-    this.number( value.value );
-  }
-
-  setquantity() {
-    for( let i = 1; i < 11 ; i++ ) {
-      this.quantityArray.push(i);
-    };
-  }
 
   number( value: string ) {
     return Number(value) || 1;
+  }
+
+  calc( price: number ){
+    this.total = this.quantity * price;
   }
 
 }

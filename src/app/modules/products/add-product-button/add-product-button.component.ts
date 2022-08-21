@@ -23,7 +23,7 @@ export class AddProductButtonComponent implements OnInit {
 
   addProduct() {
     this.productsCartService.addProduct( this.product! );
-    alert('Added');
+    alert('Added Success');
   }
 
 }

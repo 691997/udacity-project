@@ -12,15 +12,8 @@
         <h5 class="title"> {{ product.name }} </h5>
         <p class="details"> {{ product.details }} </p>
         <div class="quantity">
-          <select class="form-select shadow-none" #value (change)="getQuantity(value)">
-            <option *ngFor="let number of quantityArray" value="{{ number }}"> {{ number }} </option>
-          </select>
-          <p class="price"> {{ product.price }} $ </p>
-        </div>
-        <div>
-          <label> Total : </label>
-          <input class="text-center border-0" type="text" disabled [value]="number(value.value) * product.price">
-          <span> $ </span>
+          <input type="number" [id]="product.id" class="form-input" min="0" max="10" [(ngModel)]="quantity" (ngModelChange)="calc(product.price)">
+          <p class="price"> {{ product.price | currency }} </p>
         </div>
         <div class="text-center">
           <button class="btn btn-danger shadow-none my-3" (click)="removeProduct(product)"> Remove </button>
@@ -28,11 +21,12 @@
       </div>
     </div>
 
+    <h3 class="text-center"> Total: {{ total | currency }} </h3>
     <h5 class="text-center my-5 text-success" *ngIf="userProducts?.length == 0 " > No Products </h5>
   </div>
 
   <div class="col-3">
-    <app-user-form></app-user-form>
+    <app-user-form (submittedSuccess)="submittedSuccess($event)"></app-user-form>
   </div>
 
 </section>

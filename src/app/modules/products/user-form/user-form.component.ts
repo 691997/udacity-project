@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
 })
 export class UserFormComponent implements OnInit {
 // ----------------------------------- Properties ------------------------------
+
+  @Output() submittedSuccess: EventEmitter<any> = new EventEmitter<any>();
 
   formData!: FormGroup;
   creditCardPattern = /^[0-9]{16}$/g;
@@ -30,6 +32,7 @@ export class UserFormComponent implements OnInit {
   onSubmit() {
     if( this.formData.valid ) {
       this.route.navigateByUrl('/success');
+      this.submittedSuccess.emit(' Submitted Success ');
     }
   }
 

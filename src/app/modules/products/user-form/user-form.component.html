@@ -3,16 +3,19 @@
   <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label"> Full name </label>
     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="minimum 3 characters" formControlName="firstName">
+    <small class="text-danger" *ngIf="formData.get('firstName')?.invalid && formData.get('firstName')?.touched"> must be 3 character or more </small>
   </div>
 
   <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label"> Address </label>
     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="minimum 6 characters" formControlName="adress">
+    <small class="text-danger" *ngIf="formData.get('adress')?.invalid && formData.get('adress')?.touched"> must be 6 character or more </small>
   </div>
 
   <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label"> Credit card number </label>
     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="(16-digit number)" formControlName="creditCard">
+    <small class="text-danger" *ngIf="formData.get('creditCard')?.invalid && formData.get('creditCard')?.touched"> must be 16 character </small>
   </div>
 
   <button type="submit" class="btn btn-danger"> Submit </button>

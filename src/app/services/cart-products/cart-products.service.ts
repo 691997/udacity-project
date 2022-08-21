@@ -21,7 +21,7 @@ export class CartProductsService {
     const isExist =  this.userProductsCart.filter( data => {
       return data.id == product.id;
     });
-    
+
     if( isExist.length === 0 ) return this.userProductsCart.push( product );
     return;
   };

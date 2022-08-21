@@ -5,5 +5,6 @@ export interface IProducts {
   name: string,
   details: string,
   img: string,
+  quantity: number,
   price: number,
 }
