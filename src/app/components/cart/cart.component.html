@@ -12,7 +12,7 @@
         <h5 class="title"> {{ product.name }} </h5>
         <p class="details"> {{ product.details }} </p>
         <div class="quantity">
-          <input type="number" [id]="product.id" class="form-input" min="0" max="10" [(ngModel)]="quantity" (ngModelChange)="calc(product.price)">
+          <input type="number" [id]="product.id" class="form-input" #pro min="1" max="10" [(ngModel)]="product.quantity" (ngModelChange)="getTotal(product)">
           <p class="price"> {{ product.price | currency }} </p>
         </div>
         <div class="text-center">
@@ -22,7 +22,6 @@
     </div>
 
     <h3 class="text-center"> Total: {{ total | currency }} </h3>
-    <h5 class="text-center my-5 text-success" *ngIf="userProducts?.length == 0 " > No Products </h5>
   </div>
 
   <div class="col-3">
